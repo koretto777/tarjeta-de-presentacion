@@ -69,7 +69,8 @@ button {
 }
 
 .card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     background-color:var(--white);
     border-radius: 1rem;
@@ -108,7 +109,7 @@ button {
     border-radius: 50%;
     overflow: hidden;
     background-color: var(--base);
-    max-width: 350px;
+    max-width: 200px;
 }
 
 .main div:last-child {
@@ -164,3 +165,79 @@ button {
     font-size: .75rem;
 }
 
+@media screen and (min-width: 768px) {
+    .brand {
+    max-width: 160px;
+    }
+
+    .card {
+        max-width: 560px;
+    }
+
+    .main div:first-child {
+        max-width: 260px;
+    }
+
+    .main div:last-child {
+        padding: 0 4rem;
+        gap: .75rem;
+    }
+
+    .main h1 {
+        font-size: 3.125rem;
+        line-height: 3.125rem;
+    }
+
+    .main p {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    .icon {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        gap: 4rem;
+        max-width: 1200px;
+    }
+
+    .brand {
+        max-width: 220px;
+    }
+
+    .main {
+        flex-direction: row;
+        padding: 0 4rem;
+        gap: 1.5rem;
+    }
+
+    .main div:first-child {
+        max-width: 360px;
+    }
+
+    .main div:last-child {
+        max-width: 400px;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .main h1 {
+        text-align: left;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .main p {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .main a {
+        align-self: flex-start;
+        font-size: 1.23rem;
+    }
+}
