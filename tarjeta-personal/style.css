@@ -209,6 +209,11 @@ button {
         max-width: 220px;
     }
 
+    .icon {
+        width: 48px;
+        height: 48px;
+    }
+
     .main {
         flex-direction: row;
         padding: 0 4rem;
