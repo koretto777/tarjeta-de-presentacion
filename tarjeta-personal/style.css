@@ -32,6 +32,14 @@ para usar variables en la propiedades del código usamos la función var()
 
 }
 
+body.dark {
+    --base:rgb(53, 8, 8, 1);
+    --highlight:rgb(6, 4, 4, 1);
+    --shadow:rgb(198, 31, 31, 1);
+    --white:rgb(6, 4, 4, 1);
+    --black:rgb(242, 237, 237, 1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -99,10 +107,11 @@ button {
     border-radius: 8px;
     background-color: var(--white);
     box-shadow: 0 3px 3px var(--shadow1);
+    cursor: pointer;
 }
 
 .icon svg {
-    stroke: var(--base);
+    stroke: var(--shadow);
 }
 
 .main {
@@ -223,13 +232,12 @@ button {
         height: 48px;
     }
 
-    .icon:hover svg {
-        /* background-color: var(--base); */
-        stroke: var(--white);
+    .icon:hover {
+        background-color: var(--base);        
     }
 
-    .icon:hover img {
-        filter: brightness(100);
+    .icon:hover svg {
+        stroke: var(--white);
     }
 
     .main {
@@ -262,5 +270,9 @@ button {
     .main a {
         align-self: flex-start;
         font-size: 1.23rem;
+    }
+
+    .main a:hover {
+        background-color: var(--white);
     }
 }
