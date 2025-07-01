@@ -17,15 +17,64 @@
 
         <header class="header">
             <div class="brand">
-                <img src="./assets/logo koretto.svg" alt="Logo Colette" />
+                <img id="logo" src="./assets/logo koretto.svg" alt="Logo Koretto" />
             </div>
 
             <button class="icon" id="toggle-button">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- icono darkmode -->
+                <svg class="theme-icon" id="icon-moon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M18.9809 10.8091C18.8236 12.5113 18.1848 14.1335 17.1392 15.4859C16.0935 16.8383 14.6844 17.8649 13.0766 18.4456C11.4688 19.0264 9.72889 19.1372 8.06041 18.7652C6.39192 18.3931 4.8639 17.5536 3.65513 16.3449C2.44636 15.1361 1.60684 13.6081 1.23481 11.9396C0.86278 10.2711 0.97362 8.53117 1.55436 6.92339C2.13511 5.3156 3.16173 3.90645 4.51412 2.86084C5.8665 1.81523 7.4887 1.17639 9.1909 1.01909C8.19432 2.36736 7.71475 4.02854 7.83944 5.7005C7.96412 7.37247 8.68477 8.94415 9.87031 10.1297C11.0558 11.3152 12.6275 12.0359 14.2995 12.1606C15.9715 12.2852 17.6326 11.8057 18.9809 10.8091Z"
                         stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
+                <!-- icono lightmode -->
+                <svg class="theme-icon" id="icon-sun" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_di_20_193)">
+                        <path
+                            d="M16 17C18.7614 17 21 14.7614 21 12C21 9.23858 18.7614 7 16 7C13.2386 7 11 9.23858 11 12C11 14.7614 13.2386 17 16 17Z"
+                            stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 1V3" stroke="inherit" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M16 21V23" stroke="inherit" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M8.22 4.22L9.64 5.64" stroke="inherit" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M22.36 18.36L23.78 19.78" stroke="inherit" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M5 12H7" stroke="inherit" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M25 12H27" stroke="inherit" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M8.22 19.78L9.64 18.36" stroke="inherit" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M22.36 5.64L23.78 4.22" stroke="inherit" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_di_20_193" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.776471 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.15 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_20_193" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_20_193" result="shape" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dx="4" dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.776471 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.1 0" />
+                            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_20_193" />
+                        </filter>
+                    </defs>
+                </svg>
+
             </button>
         </header>
 
